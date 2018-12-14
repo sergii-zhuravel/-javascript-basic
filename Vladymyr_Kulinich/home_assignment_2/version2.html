@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home assignment2 v02</title>
+
+    <script>
+        
+    function multiplication() {
+
+var a = parseInt(document.getElementById('a').value);
+var b = parseInt(document.getElementById('b').value);
+
+if (isNaN(a)==true) a=0;
+if (isNaN(b)==true) b=0;
+
+var c = a * b;
+
+document.getElementById('result').innerHTML = +a + "*" +b + "=" +c;
+    }
+    </script>
+</head>
+<body>
+    <form>
+<input type="text" id="a" value="1"><br>
+<input type="text" id="b" value="1"><br>
+<input type="button" value="Умножение 2-х чисел" onclick="multiplication();"><br>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
