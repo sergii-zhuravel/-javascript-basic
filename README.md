@@ -1,4 +1,4 @@
-# javascript-advanced
+# javascript-basic
 
 ### Ресурсы
 https://www.w3schools.com/js/default.asp (W3Schools)
