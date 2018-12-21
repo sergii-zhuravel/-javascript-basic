@@ -1,3 +1,5 @@
+// Task #1
+
 var num = 1;
 var num2 = 1;
 
@@ -12,3 +14,4 @@ num = num + true;
 num = num + (!false);
 
 document.writeln(num);
+
