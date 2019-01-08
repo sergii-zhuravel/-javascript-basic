@@ -27,7 +27,7 @@ function printTask() {
     document.writeln("*** My To Do List ***" + lineBreak);
     for (i = 0; i < mas.length; i++) 
         document.write(mas[i] + lineBreak);
-    comLi();
+    setTimeout(comLi, 1000);
 }
 
 function exitApp() {
