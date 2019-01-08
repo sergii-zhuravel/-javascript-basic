@@ -1,20 +1,34 @@
-// Task 2
-var number =  prompt('Напишите число');
 
-// if (number % 2 > 0) {
-    
-// } else {
-   
-// }
-
-
-// Написать программу для числа N. выведет все четные числа.
-
-for (var i = 0; i <= number; i++) {
-    var final = +number - i;
-
-    if (final % 2 == 0) {
-        console.log(final);
+function myFunc() {
+    var accum = 0;
+    for(var i = 0; i < arguments.length; i ++) {
+        accum = accum + arguments[i];
     }
 
+    return accum;
+}
+
+console.log(myFunc(1+1));
+
+function calc(a, b, mult) {
+    return mult(a+b);
+}
+
+function mult(a,b) {
+    return a + b;
+}
+
+var res = calc(3,3,mult);
+console.log(res);
+
+var toDo = {
+    id: 1,
+    tittle: 'text',
+    description: 'Купить',
+    status: 'To do',
+}
+
+
+for(key in toDo) {
+    console.log(toDo[key].toString().toUpperCase());
 }
