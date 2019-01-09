@@ -1,34 +1,9 @@
+var students = [{name: 'name 1', age: '1'},{name: 'name 2', age: '2'}];
 
-function myFunc() {
-    var accum = 0;
-    for(var i = 0; i < arguments.length; i ++) {
-        accum = accum + arguments[i];
-    }
+console.table(students);
 
-    return accum;
+function sornIndex(a,b) {
+    return a - b;
 }
 
-console.log(myFunc(1+1));
-
-function calc(a, b, mult) {
-    return mult(a+b);
-}
-
-function mult(a,b) {
-    return a + b;
-}
-
-var res = calc(3,3,mult);
-console.log(res);
-
-var toDo = {
-    id: 1,
-    tittle: 'text',
-    description: 'Купить',
-    status: 'To do',
-}
-
-
-for(key in toDo) {
-    console.log(toDo[key].toString().toUpperCase());
-}
+console.log(students[0].age);
