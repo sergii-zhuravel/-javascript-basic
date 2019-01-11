@@ -14,7 +14,7 @@ function comLi() {
     }
 }
 
-var mas = new Array ();
+var mas = [];
 
 function addTask() {
     mas.push(prompt("--->> Describe the task <<---"));
@@ -22,11 +22,12 @@ function addTask() {
 }
 
 function printTask() {
-    var i;
     var lineBreak = "<br/>";
     document.writeln("*** My To Do List ***" + lineBreak);
-    for (i = 0; i < mas.length; i++) 
+    
+    for (var i = 0; i < mas.length; i++) {
         document.write(mas[i] + lineBreak);
+    }
     setTimeout(comLi, 1000);
 }
 
