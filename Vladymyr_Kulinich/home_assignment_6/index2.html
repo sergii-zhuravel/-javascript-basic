@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+  var person = {name : "John", age : 20};
+    var age;
+      function changePersonAge (person, age){
+        if (person.age == "") {return false;}
+        else {return person.age = age;}
+      };
+        document.writeln("Обновленный возраст" + " " + changePersonAge({name : "John", age : 20}, 30));
+    </script>
+  </body>
+</html>
