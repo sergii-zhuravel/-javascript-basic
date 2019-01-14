@@ -1,5 +1,5 @@
 var a = 1, b = 1, c, d;
-    
+
 c = ++a; console.log(c); // 2
 d = b++; console.log(d); // 1
 
