@@ -1,51 +1,49 @@
-// Task one
-var lineBreak = "<br />";
-var a = parseInt(prompt("Enter the first number"));
-var b = parseInt(prompt("Enter the second number"));
-var numOperation = parseInt(prompt("'1' - Ammount, '2' - Difference, '3' - Multiplication, '4' - Division"));
+// Task one //
+var a = parseInt(prompt("введите первое число"));
+var b = parseInt(prompt("введите второе число"));
+var numOperation = parseInt(prompt("'1' - добавление, '2' - вычетание, '3' - множение, '4' - деление"));
 
-function sum() {
+function dob() {
     return a + b;
 }
 
-function dif() {
+function vich() {
     return a - b;
 }
 
-function mult() {
+function mnoj() {
     return a * b;
 }
 
-function div() {
+function del() {
     return a / b;
 }
 
 
 if (numOperation === 1) {
-    document.writeln(sum());
+    document.writeln(dob());
     }else if (numOperation === 2) {
-        document.writeln(dif());
+        document.writeln(vich());
     }else if (numOperation === 3) {
-        document.writeln(mult());
+        document.writeln(mnoj());
     }else if (numOperation === 4) {
-        document.writeln(div());
+        document.writeln(del());
     }
-    else {document.writeln('Error!!!' + lineBreak);
+    else {document.writeln('ошибка');
     }
 
-// Task two
+// Task two //
 
-var lineBreak = "<br />";
 
-function isEven(number) {
+function isNumber(number) {
     return number % 2 === 0;
 }
 
 while(numIn !== 0) {
-    var numIn = parseInt(prompt("Enter any number"));
-    if (isEven(numIn) === true) {
-        document.writeln("You entered number is event = ", numIn + lineBreak);
+    var numIn = parseInt(prompt("введите любое число"));
+    if (isNumber(numIn) === true) {
+        document.writeln("это четное число  = ", numIn);
     } else {
-        document.writeln("You entered not an even number = ", numIn + lineBreak);
+        document.writeln("это не четное число  = ", numIn);
     }
 }
